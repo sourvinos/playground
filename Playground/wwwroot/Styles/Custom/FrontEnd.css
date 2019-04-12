@@ -1,0 +1,35 @@
+﻿@font-face {
+    font-family: myUbuntu;
+    src: url("/fonts/ubuntu-condensed.ttf");
+}
+
+@font-face {
+    font-family: myPlayBold;
+    src: url("/fonts/play-bold.ttf");
+}
+
+@font-face {
+    font-family: myPlayRegular;
+    src: url("/fonts/play-regular.ttf");
+}
+
+body {
+    font-family: myUbuntu;
+    margin: 0;
+}
+
+#outerWrapper {
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    background-color: navajowhite;
+}
+
+#wrapper {
+    align-items: center;
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    justify-content: center;
+    margin: 0 auto;
+}

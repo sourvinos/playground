@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<!-- Generator: Adobe Illustrator 19.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 40 40" style="enable-background:new 0 0 40 40;" xml:space="preserve">
+<g id="Background">
+	<g id="XMLID_1_">
+		<path id="XMLID_17_" style="fill-rule:evenodd;clip-rule:evenodd;fill:#D7D6D3;" d="M5,39.5c-2.481,0-4.5-2.019-4.5-4.5V5
+			c0-2.481,2.019-4.5,4.5-4.5h30c2.481,0,4.5,2.019,4.5,4.5v30c0,2.481-2.019,4.5-4.5,4.5H5z"/>
+		<path id="XMLID_14_" style="fill:#666666;" d="M35,1c2.206,0,4,1.794,4,4v30c0,2.206-1.794,4-4,4H5c-2.206,0-4-1.794-4-4V5
+			c0-2.206,1.794-4,4-4H35 M35,0H5C2.239,0,0,2.239,0,5v30c0,2.761,2.239,5,5,5h30c2.761,0,5-2.239,5-5V5C40,2.239,37.761,0,35,0
+			L35,0z"/>
+	</g>
+</g>
+<g id="Power">
+	<g id="Layer_1">
+		<g id="XMLID_24_">
+			<path id="XMLID_29_" style="fill-rule:evenodd;clip-rule:evenodd;fill:#F16522;" d="M20.003,10C26.84,10,32.684,14.805,35,21.579
+				l-7.501,3.239c-1.158-3.387-4.077-5.786-7.496-5.786c-3.424,0-6.344,2.4-7.501,5.786L5,21.579C7.321,14.805,13.16,10,20.003,10
+				L20.003,10z"/>
+			<path id="XMLID_28_" style="fill-rule:evenodd;clip-rule:evenodd;fill:#00BDD6;" d="M20.003,10c3.166,0,6.124,1.03,8.61,2.813
+				l-4.423,7.544c-1.218-0.845-2.656-1.326-4.187-1.326c-3.424,0-6.344,2.4-7.501,5.786L5,21.579C7.321,14.805,13.16,10,20.003,10
+				L20.003,10z"/>
+			<path id="XMLID_27_" style="fill-rule:evenodd;clip-rule:evenodd;" d="M30.155,10.21L30.155,10.21L20.14,29.61
+				c-0.209,0.401-0.686,0.506-1.032,0.253l0,0c-0.346-0.247-0.461-0.777-0.225-1.16L30.155,10.21z"/>
+		</g>
+	</g>
+</g>
+</svg>

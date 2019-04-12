@@ -1,0 +1,95 @@
+﻿html {
+    margin: 20px;
+}
+
+#box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    border: 1px solid;
+}
+
+h1 {
+    padding: 10px;
+    margin: 10px;
+    transform: scaleX(1.5);
+    transform: scaleY(1.5);
+}
+
+#change-color {
+    margin: 10px;
+    background-color: orange;
+    padding: 20px;
+    transition: all;
+    transition-duration: 1s;
+    text-align: center;
+}
+
+    #change-color:hover {
+        background-color: green;
+        color: yellow;
+    }
+
+#change-size {
+    background-color: aquamarine;
+    color: black;
+    margin: 10px;
+    padding: 20px;
+    transition: width 0.3s;
+    width: 200px; /* This will change when over it. Must be initialized, or the animation will not work! */
+    text-align: center;
+}
+
+    #change-size:hover {
+        width: 300px;
+    }
+
+#move {
+    margin: 10px;
+    background-color: dodgerblue;
+    color: white;
+    padding: 20px;
+    transition: all;
+    transition-duration: 1s;
+    text-align: center;
+    transition-timing-function: ease-out;
+}
+
+    #move:hover {
+        transform: translate(100px, 0); /* Will move 100px to the right, relative to the current position*/
+    }
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+li, a {
+    padding: 10px;
+    transition: background-color 0.85s ease;
+    cursor: pointer;
+}
+
+    a:hover {
+        color: white;
+        background-color: rgba(128, 128, 128,0.9);
+    }
+
+img {
+    width: 150px;
+    height: 100px;
+}
+
+#thumbnails {
+    display: flex;
+    flex-direction: column;
+}
+
+#top, #bottom {
+    text-align: center;
+}

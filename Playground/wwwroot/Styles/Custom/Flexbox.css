@@ -1,0 +1,64 @@
+﻿* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: rgb(215,214,211);
+}
+
+ul {
+    display: flex;
+    list-style: none;
+}
+
+a, a:visited, a:hover, a:active {
+    text-decoration: none;
+}
+
+#wrapper {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    background: url("../../images/site/background.svg") top center no-repeat;
+    height: 100%;
+}
+
+#pageHeader {
+    background-color: rgba(0,0,0,1);
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+    #pageHeader #innerHeader {
+        display: flex;
+        flex-direction: column;
+    }
+
+        #pageHeader #innerHeader #menu {
+            display: flex;
+            font-family: myUbuntu;
+            justify-content: center;
+        }
+
+            #pageHeader #innerHeader #menu li {
+                padding: 10px;
+            }
+
+            #pageHeader #innerHeader #menu a {
+                color: white;
+                font-size: 170%;
+                font-variant-caps: small-caps;
+            }
+
+#content {
+    align-items: center;
+    background-size: 100%;
+    background-color: darkgrey;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}

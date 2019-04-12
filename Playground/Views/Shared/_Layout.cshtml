@@ -1,0 +1,38 @@
+﻿<!DOCTYPE html>
+
+<html>
+
+<head>
+
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <link rel="stylesheet" href="~/styles/custom/frontEnd.css" />
+
+    <script src="~/scripts/base/jQuery.min.js"></script>
+
+    <title>Sandbox!</title>
+
+</head>
+
+<body>
+
+    @*<div id="outerWrapper">*@
+
+    @*@Html.Partial("_header")*@
+
+    @*<div id="wrapper">  *@
+
+    @RenderBody()
+
+    @*</div>*@
+
+    @*@Html.Partial("_footer")*@
+
+    @*</div>*@
+
+    @RenderSection("scripts", required: false)
+
+</body>
+
+</html>

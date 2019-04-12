@@ -1,0 +1,13 @@
+﻿#pageHeader {
+    background-color: rgba(0,0,0,1);
+    border-bottom: 5px solid white;
+    color: white;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+}
+
+    #pageHeader #innerHeader {
+        display: flex;
+        flex-direction: column;
+    }

@@ -1,0 +1,207 @@
+﻿#content {
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+    min-height: 393px;
+}
+
+#details {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    padding: 0 20px;
+}
+
+    /*#region Header */
+
+    #details #detailsHeader {
+        color: black;
+        display: flex;
+        font-family: myUbuntu;
+        font-weight: bold;
+        height: 60px;
+        width: 100%;
+    }
+
+        #details #detailsHeader #manufacturer {
+            align-items: center;
+            color: #C03437;
+            display: flex;
+            font-size: 200%;
+        }
+
+        #details #detailsHeader #price {
+            align-items: center;
+            display: flex;
+            font-size: 200%;
+            margin-left: auto;
+        }
+
+    /*#endregion */
+
+    /*#region Image */
+
+    #details #mainImage {
+        border: 1px dotted black;
+        border-radius: 20px;
+        display: flex;
+        width: 100%;
+    }
+
+        #details #mainImage img {
+            border-radius: 20px;
+            height: 100%;
+            width: 100%;
+        }
+
+    /*#endregion */
+
+    /*#region Navigation */
+
+    #details #navigation {
+        align-items: center;
+        align-self: flex-start;
+        justify-content: center;
+    }
+
+        #details #navigation #scrollLeft, #scrollRight {
+            cursor: pointer;
+            width: 30px;
+        }
+
+        #details #navigation #thumbnails {
+            display: flex;
+            height: 90px;
+            margin: 5px;
+            overflow: hidden;
+            position: relative;
+            width: 620px;
+        }
+
+            #details #navigation #thumbnails .thumbnail {
+                background: url("../../images/site/crosshair.svg") no-repeat;
+                height: 90px;
+                padding: 0 2px;
+                width: 124px;
+            }
+
+                #details #navigation #thumbnails .thumbnail img {
+                    cursor: pointer;
+                    height: 90px;
+                    width: 120px;
+                }
+
+/*#endregion */
+
+/*#region Specifications */
+
+.specifications {
+    border: 1px dotted black;
+    border-radius: 20px;
+    flex-direction: column;
+    font-family: myUbuntu;
+    font-variant-caps: small-caps;
+}
+
+    .specifications .specifications-header {
+        border-bottom: solid gray thin;
+        color: #C03437;
+        flex-direction: column;
+        font-family: myUbuntu;
+        font-size: 120%;
+        font-weight: bold;
+        margin: 0 0 20px 0;
+        padding-bottom: 5px;
+        text-align: center;
+    }
+
+        .specifications .specifications-header:nth-child(2n+1) {
+            margin: 20px 20px;
+        }
+
+    .specifications .specifications-main {
+        display: flex;
+        justify-content: center;
+    }
+
+    .specifications .specification#extras {
+        justify-content: center;
+    }
+
+    .specifications .specification {
+        align-items: center;
+        display: flex;
+        font-size: 90%;
+        margin: 5px 0;
+    }
+
+        .specifications .specification img {
+            height: 30px;
+            margin: 0 10px;
+            width: 30px;
+        }
+
+/*#endregion */
+
+@media only screen and (max-width:768px) {
+    #navigation {
+        display: none;
+    }
+
+    .specifications#mobile {
+        margin: 20px;
+    }
+}
+
+@media only screen and (min-width:769px) {
+    #navigation {
+        display: flex;
+        margin: 20px auto 20px;
+    }
+}
+
+@media only screen and (max-width:1024px) {
+    #content {
+        flex-direction: column;
+    }
+
+    .specifications#desktop {
+        display: none;
+    }
+
+    .specifications#mobile {
+        display: flex;
+        margin: 20px;
+        max-height: 350px;
+    }
+}
+
+@media only screen and (min-width:1025px) {
+    #content {
+        flex-direction: row;
+    }
+
+    .specifications#desktop {
+        display: flex;
+        margin: 60px 20px 120px 0;
+        flex: 0 0 250px;
+    }
+
+    .specifications-main {
+        flex-direction: column;
+        margin-left: 20px;
+    }
+
+    .specifications#mobile {
+        display: none;
+    }
+}
+
+.active {
+    opacity: 0.6;
+}
+
+
+sup {
+    font-size: 60%;
+}

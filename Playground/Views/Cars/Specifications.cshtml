@@ -1,0 +1,52 @@
+﻿@model Playground.ViewModels.CarViewModel
+
+<div class="specifications-header">
+    <span>ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ</span>
+</div>
+
+<div class="specifications-main">
+    <div id="specifications-main-left">
+        <div class="specification">
+            <img class="specification" src="~/images/site/year.svg" />
+            <span class="specification">@Model.Year</span>
+        </div>
+        <div class="specification">
+            <img class="specification" src="~/images/site/km.svg" />
+            <span class="specification">@string.Format("{0:#,##0} km", Model.Km)</span>
+        </div>
+        <div class="specification">
+            <img class="specification" src="~/images/site/engine.svg" />
+            <span class="specification">@string.Format("{0:#,##0} cm", @Model.EngineDisplacement)</span><sup>3</sup>
+        </div>
+        <div class="specification">
+            <img class="specification" src="~/images/site/power.svg" />
+            <span class="specification">@string.Format("{0:#,##0} hp", @Model.Power)</span>
+        </div>
+    </div>
+    <div id="specification-main-right">
+        <div class="specification">
+            <img class="specification" src="~/images/site/fuel.svg" />
+            <span class="specification">@Model.FuelDescription</span>
+        </div>
+        <div class="specification">
+            <img class="specification" src="~/images/site/gearbox.svg" />
+            <span class="specification">@Model.GearBoxDescription @Model.Gears</span>
+        </div>
+        <div class="specification">
+            <img class="specification" src="~/images/site/doors.svg" />
+            <span class="specification">@Model.Doors</span>
+        </div>
+        <div class="specification">
+            <img class="specification" src="~/images/site/palette.svg" />
+            <span class="specification">@Model.ColorDescription</span>
+        </div>
+    </div>
+</div>
+
+<div class="specifications-header">
+    <span>ΕΙΔΙΚΑ ΧΑΡΑΚΤΗΡΙΣΤΙΚΑ</span>
+</div>
+
+<div class="specifications-main">
+    <span class="specification" id="extras">@Model.Extras</span>
+</div>

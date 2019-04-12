@@ -1,0 +1,30 @@
+﻿body {
+    font-family: myPlayRegular;
+    background-color: antiquewhite;
+}
+
+select {
+    font-size: 100%;
+    font-family: myPlayRegular;
+}
+
+.field-validation-error {
+    color: red;
+}
+
+.field-validation-valid {
+    display: none;
+}
+
+.input-validation-error {
+    border: 1px solid red;
+    background-color: white;
+}
+
+.validation-summary-errors {
+    color: red;
+}
+
+.validation-summary-valid {
+    display: none;
+}

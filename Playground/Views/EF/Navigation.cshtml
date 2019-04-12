@@ -1,0 +1,8 @@
+﻿@model IEnumerable<Playground.Models.Car>
+
+@foreach (var car in Model)
+{
+    <h2>ID: @car.CarId</h2>
+    <p>ManufacturerID: @car.ManufacturerId</p>
+    <p>ManufacturerDescription: @car.ManufacturerDescription</p>
+}

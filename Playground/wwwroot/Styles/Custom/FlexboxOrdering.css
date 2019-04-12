@@ -1,0 +1,16 @@
+﻿.container {
+    display: flex;
+}
+
+.box {
+    flex: 0; /* Each child will occupy space according to its content. Default */
+    flex: 1; /* Stretch each child to 100% of the parent */
+}
+
+.box3 {
+    order: 1; /* Move it to the end of the stack */
+}
+
+.box10 {
+    order: -1; /* Move it to the beginning of the stack */
+}

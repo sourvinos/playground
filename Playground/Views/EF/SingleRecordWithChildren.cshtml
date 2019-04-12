@@ -1,0 +1,14 @@
+﻿@model IEnumerable<Playground.ViewModels.GroupJoinAndInnerJoinViewModel>
+
+@foreach (var student in Model)
+{
+    <h4>@student.StudentId - @student.StudentName</h4>
+    <h5>@student.SchoolName</h5>
+
+    @foreach (var mark in student.Marks)
+    {
+        <p>@mark.SubjectName @mark.Score</p>
+    }
+}
+
+

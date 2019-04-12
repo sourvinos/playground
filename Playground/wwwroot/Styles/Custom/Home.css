@@ -1,0 +1,13 @@
+﻿#content {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+}
+
+    #content img#mainImage {
+        display: flex;
+        width: 200px;
+        height: 200px;
+        flex: 1 1 auto;
+    }

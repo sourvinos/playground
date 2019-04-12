@@ -1,0 +1,18 @@
+﻿.container {
+    display: flex; /* Stretch to the 100% of the container */
+    display: inline-flex; /* Adjust the size according to the size of the children */
+    border: 10px solid yellow;
+    height: 100%; /* Use it with box-sizing to kill the scroll bars! */
+    flex-direction: row; /* Default */
+    flex-wrap: wrap;
+    min-height: 100vh;
+}
+
+.box {
+    color: white;
+    font-size: 100px;
+    text-align: center;
+    text-shadow: 4px 4px 0 rgba(0,0,0,0.1);
+    padding: 10px;
+    width: 300px; /* This works because the .container is flex-wrap: wrap, otherwise it will be ignored*/
+}

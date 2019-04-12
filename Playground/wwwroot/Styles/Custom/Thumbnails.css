@@ -1,0 +1,25 @@
+﻿li {
+    list-style-type: none;
+}
+
+#container {
+    margin: 15px auto;
+    position: relative;
+    text-align: center;
+    width: 900px;
+}
+
+a, a:visited {
+    color: #0196e3;
+    outline: none;
+    text-decoration: none;
+}
+
+    a:hover {
+        text-decoration: underline;
+    }
+
+p {
+    padding-top: 10px;
+    text-align: center;
+}

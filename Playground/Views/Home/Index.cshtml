@@ -1,0 +1,48 @@
+﻿@model Playground.Implementations.Clock
+
+<style>
+    html, body, .page {
+        height: 100%;
+    }
+
+    body {
+        overflow: hidden;
+    }
+
+    p {
+        margin-bottom: 1em;
+    }
+
+    .page {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .page-header {
+        flex: 0 0 auto;
+        background-color: #4cff00;
+        margin-bottom: 1em;
+        height: 5em;
+    }
+
+    .page-content {
+        flex: 1 1 auto;
+        position: relative;
+        overflow-y: auto;
+    }
+
+    .page-footer {
+        flex: 0 0 auto;
+        background-color: #00ffff;
+        margin-top: 1em;
+        height: 5em;
+    }
+</style>
+
+<div class="page">
+    <div class="page-header">Header</div>
+    <div class="page-content">
+        @Model.GetTime().ToString("T")
+    </div>
+    <div class="page-footer">Footer</div>
+</div>

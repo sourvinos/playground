@@ -1,0 +1,44 @@
+﻿@model IEnumerable<Playground.ViewModels.CarViewModel>
+
+<link rel="stylesheet" href="~/styles/custom/details.css" />
+
+<div id="content">
+
+    @foreach (var car in Model)
+    {
+        <div id="details">
+
+            <div id="detailsHeader">
+                <div id="manufacturer">@car.ManufacturerDescription @car.ModelDescription</div>
+                <div id="price">&euro; @string.Format("{0:#,##0}", car.Price)</div>
+            </div>
+
+            <div id="mainImage">
+                <img src="~/images/cars/@car.Images.First().Url" />
+            </div>
+
+            <div id="navigation">
+                <img id="scrollLeft" src="~/images/site/leftarrow.svg" />
+                <div id="thumbnails">
+                    @foreach (var item in car.Images)
+                    {
+                        <div class="thumbnail"><img src="~/images/cars/@item.Url" /></div>
+                    }
+                </div>
+                <img id="scrollRight" src="~/images/site/rightarrow.svg" />
+            </div>
+
+        </div>
+
+        <div class="specifications" id="desktop">
+            @Html.Partial("specifications", car)
+        </div>
+
+        <div class="specifications" id="mobile">
+            @Html.Partial("specifications", car)
+        </div>
+    }
+
+</div>
+
+<script src="~/scripts/custom/details.js"></script>

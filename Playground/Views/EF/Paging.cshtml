@@ -1,0 +1,14 @@
+﻿@model PaginatedList<Playground.ViewModels.CustomerThumbnailViewModel>
+
+@foreach (var customer in Model)
+{
+    <p>@customer.Id &ensp; @customer.CustomerDescription @customer.TaxOfficeDescription @customer.FirstAddress</p>
+}
+
+@{
+    var prevDisabled = !Model.HasPreviousPage ? "disabled" : "";
+    var nextDisabled = !Model.HasNextPage ? "disabled" : "";
+}
+
+<a asp-action="eight" asp-route-identity="@ViewData["identity"]" asp-route-pageNo="@(Model.PageIndex - 1)" class="@prevDisabled">Previous</a>
+<a asp-action="eight" asp-route-identity="@ViewData["identity"]" asp-route-pageNo="@(Model.PageIndex + 1)" class="@nextDisabled">Next</a>

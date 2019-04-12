@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Playground.ViewModels.StudentThumbnailViewModel>
+
+@foreach (var student in Model)
+{
+    <h4>Id: @student.Id - Name: @student.Name</h4>
+    <h5>School: @student.SchoolName</h5>
+    <h5>First mark: @student.FirstMark</h5>
+}
+
+@*<a asp-controller="home" asp-action="pagination" asp-route-page="@(ViewBag.currentPage - 1)" class="btn @prevDisabled">Previous</a>*@

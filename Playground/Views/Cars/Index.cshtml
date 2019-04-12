@@ -1,0 +1,10 @@
+﻿@model IEnumerable<Playground.ViewModels.CarViewModel>
+
+@foreach (var car in Model)
+{
+    <h2>@car.CarId</h2>
+
+    <p>Manufacturer: @car.ManufacturerId - @car.ManufacturerDescription</p>
+    <p>Model: @car.ModelId - @car.ModelDescription</p>
+    <p>Color: @car.ColorId - @car.ColorDescription</p>
+}

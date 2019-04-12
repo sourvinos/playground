@@ -1,0 +1,9 @@
+﻿.container {
+    display: flex;
+    border: 10px solid brown;
+    height: 100vh;
+    /*align-items: stretch;*/ /* Default */
+    /*align-items: flex-start;*/
+    /*align-items: flex-end;*/
+    align-items: center;
+}
