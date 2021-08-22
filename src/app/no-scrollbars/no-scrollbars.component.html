@@ -1,0 +1,15 @@
+<div id="wrapper">
+
+    <div id="outer-wrapper">
+        <div id="before" *ngIf="upArrow"><i class="pi pi-arrow-up"></i></div>
+        <div (scroll)="onWindowScroll($event)" class="scrollable">
+            <ul id="list">
+                <li *ngFor="let element of elements">
+                    {{ element }}
+                </li>
+            </ul>
+        </div>
+        <div id="after" *ngIf="downArrow"><i class="pi pi-arrow-down"></i></div>
+    </div>
+
+</div>
