@@ -13,7 +13,6 @@ export class NoScrollbarsComponent {
     public downArrow: boolean
     public scrollTop: number
 
-
     ngOnInit(): void {
         this.populateItems()
     }
@@ -21,6 +20,10 @@ export class NoScrollbarsComponent {
     public onWindowScroll(event?: { target: { scrollTop: number; clientHeight: any; scrollHeight: number } }): void {
         this.upArrow = event.target.scrollTop > 0 ? true : false
         this.downArrow = event.target.clientHeight + event.target.scrollTop < event.target.scrollHeight ? true : false
+        console.log('')
+        console.log('clientHeight', event.target.clientHeight)
+        console.log('scrollTop', event.target.scrollTop)
+        console.log('scrollHeight', event.target.scrollHeight)
     }
 
     private populateItems(): void {
@@ -28,5 +31,18 @@ export class NoScrollbarsComponent {
             this.elements.push('Element ' + index)
         }
     }
+
+    public scrollToBottom(element): void {
+        const el = document.getElementById(element)
+        console.log('el', el)
+        el.scrollTop = Math.max(0, el.scrollHeight - el.offsetHeight)
+    }
+
+    public scrollToTop(element): void {
+        const el = document.getElementById(element)
+        console.log('el', el)
+        el.scrollTop = Math.max(0, 0)
+    }
+
 
 }
