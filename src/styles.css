@@ -1,8 +1,32 @@
 @import url('https://fonts.googleapis.com/icon?family=Material+Icons+Round');
 
-body {
-    height: 100vh;
+/*  */
+
+* {
+    box-sizing: border-box !important;
+}
+
+html, body {
+    background-color: #c4dfdc;
+    display: flex;
+    height: 100%;
+    margin: 0;
+    overflow: hidden;
+    padding: 0;
+    user-select: none;
+}
+
+ul {
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    list-style: none;
     margin: 0;
     padding: 0;
-    width: 100vw;
+}
+
+p {
+    margin: 0;
+}
+
+.scrollable::-webkit-scrollbar {
+    width: 0 !important;
 }

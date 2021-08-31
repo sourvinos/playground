@@ -1,23 +1,10 @@
-<div id="wrapper">
+<div id="outer-wrapper">
 
-    <div id="outer-wrapper">
-        <div id="before">
-            <span class="material-icons-round" *ngIf="upArrow" (click)="scrollToTop('items')">
-                arrow_circle_up
-            </span>
-        </div>
-        <div (scroll)="onWindowScroll($event)" id="items" class="scrollable">
-            <ul id="list">
-                <li *ngFor="let element of elements">
-                    {{ element }}
-                </li>
-            </ul>
-        </div>
-        <div id="after">
-            <span class="material-icons-round" *ngIf="downArrow" (click)="scrollToBottom('items')">
-                arrow_circle_down
-            </span>
-        </div>
+    <div id="wrapper">
+
+        <summary [records]="items" [index]=0 [id]="items"></summary>
+        <summary [records]="suppliers" [index]=1 [id]="suppliers"></summary>
+
     </div>
 
 </div>
