@@ -1,0 +1,26 @@
+<form [formGroup]="form" autocomplete="off">
+
+    <!-- <input type="text" matInput [(localizedNumericInput)]="form.value.netAmount"> -->
+
+    <mat-form-field>
+        <!-- Net -->
+        <!-- <input decimalInput type="number" matInput [inputTabStop]="input" data-tabindex="1" step=0.01 formControlName="netValue" (keyup)="calculateGross()"> -->
+        <input decimalInput type="number" matInput [inputTabStop]="input" data-tabindex="1" step=0.01 formControlName="netAmount" (keyup)="doCalculations('netAmount')" (blur)="doCalculations('grossAmount')">
+    </mat-form-field>
+    <br>
+    <span>{{ form.value.vatPercent }}</span>
+    <mat-form-field>
+        <!-- VAT Amount -->
+        <input type="number" matInput formControlName="vatAmount">
+    </mat-form-field>
+    <br>
+    <mat-form-field>
+        <!-- Gross -->
+        <!-- <input decimalInput type="number" matInput [inputTabStop]="input" data-tabindex="3" step=0.01 formControlName="grossValue" (keyup)="calculateNet()"> -->
+        <input decimalInput type="number" matInput [inputTabStop]="input" data-tabindex="2" step=0.01 formControlName="grossAmount" (keyup)="doCalculations('grossAmount')" (blur)="doCalculations('netAmount')">
+        <!--(keyup)="doCalculations('vat')"-->
+    </mat-form-field>
+
+    <p>Form:{{ form.value | json }}</p>
+
+</form>

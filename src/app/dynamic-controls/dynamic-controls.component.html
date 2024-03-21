@@ -1,0 +1,26 @@
+<form [formGroup]="form" id="form">
+
+    <mat-form-field>
+        <mat-label>Description</mat-label>
+        <input [inputTabStop]="input" dataTabIndex="1" formControlName="description" matInput>
+    </mat-form-field>
+
+    <mat-form-field>
+        <mat-label>Profession</mat-label>
+        <input [inputTabStop]="input" dataTabIndex="2" formControlName="profession" matInput>
+    </mat-form-field>
+
+    <div formArrayName="addresses">
+        <div *ngFor="let x of addresses.controls; let i=index">
+            <mat-form-field [formGroupName]="i">
+                <mat-label>Address</mat-label>
+                <input [inputTabStop]="input" dataTabIndex="3" formControlName="streetName" matInput>
+            </mat-form-field>
+        </div>
+    </div>
+
+    <button (click)="addAddress()">Add address</button>
+
+    {{ form.value | json }}
+
+</form>

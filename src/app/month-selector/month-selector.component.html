@@ -1,0 +1,7 @@
+<div id="month-picker">
+    <input #opener type="checkbox" id="opener" (click)="setOpenerVisibility()" />
+    <label for="opener" id="button"></label>
+    <div *ngFor="let m of months, let i = index" (click)="selectMonth(m.id)" class="month {{ m.description }}" [ngStyle]="{ 'top': isOpen ?  m.offsetLeft : '200px', 'background-color': m.backgroundColor }">
+        {{ m.id }}
+    </div>
+</div>

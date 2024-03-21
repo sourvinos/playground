@@ -1,0 +1,45 @@
+* {
+    --color-january: #4c4e62;
+}
+
+#month-picker {
+    position: relative;
+}
+
+#opener {
+    display: none;
+}
+
+#button {
+    align-items: center;
+    background: #f1c40f;
+    border-radius: 50%;
+    cursor: pointer;
+    display: flex;
+    height: 60px;
+    justify-content: center;
+    left: 200px;
+    position: absolute;
+    top: 197px;
+    width: 60px;
+    z-index: 10;
+}
+
+.month {
+    align-items: center;
+    border-radius: 50%;
+    color: #ffffff;
+    display: flex;
+    font-family: "Montserrat";
+    height: 40px;
+    justify-content: center;
+    left: 204px;
+    position: absolute;
+    top: 205px;
+    transition: all 0.4s ease;
+    width: 40px;
+}
+
+.month:hover {
+    cursor: pointer;
+}

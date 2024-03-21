@@ -1,0 +1,10 @@
+<p>Upload</p>
+
+<input type="file" #file placeholder="Choose file" (change)="uploadSelectedFile(file.files)" style="display: none;">
+<button type="button" (click)="file.click()">Select and Upload file</button>
+<span class="upload" *ngIf="progress > 0">
+    {{ progress }}%
+</span>
+<span class="upload" *ngIf="message">
+    {{ message }}
+</span>

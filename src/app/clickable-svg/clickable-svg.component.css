@@ -1,0 +1,11 @@
+.clickable > path {
+    transition: all 0.3s;
+}
+
+.clickable:hover {
+    cursor: pointer;
+}
+
+.clickable:hover > path {
+    fill: antiquewhite !important;
+}
